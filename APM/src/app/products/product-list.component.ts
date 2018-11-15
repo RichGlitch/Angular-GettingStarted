@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './product-list.component.html'
 })
 export class ProductListComponent {
-  title = 'Product list';
+  title: string = 'Product list';
+  imageWidth: number = 50;
+  imageMargin: number = 5;
   products: any[] = [
     {
       "productId": 1,
