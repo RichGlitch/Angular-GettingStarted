@@ -3,7 +3,6 @@ import { IProduct } from './product';
 import { ProductService } from './product.service';
 
 @Component({
-  selector: 'pm-products',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
@@ -50,7 +49,7 @@ implements OnInit{
 
   
   ngOnInit(): void {
-    console.log('In OnInit');
+    //console.log('In OnInit');
     this.productService.getProducts().subscribe(
       products => {
         this.products = products;
